@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "EB Garamond";
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(72, 60, 68);
+}
+
+h1 {
+  margin: 20px 0;
+}
+.main {
+  border: 8px solid rgb(227, 227, 227);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.name {
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: rgb(63, 72, 78);
+  background-color: rgb(176, 176, 176);
+  justify-content: space-between;
+  align-items: center;
+}
+.name > span {
+  color: #bbb;
+}
+.name-input {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  margin: 0px 2px;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(176, 176, 176);
+  padding-left: 5px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.message-left,
+.message-right {
+    color: #2d2d2d;
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+.message-left {
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: #fff;
+  box-shadow: -2px 2px 4px #dcdcdc;
+}
+.message-right {
+  border-radius: 20px 20px 0px 20px;
+  align-self: flex-end;
+  background-color: #2d2d2d;
+  box-shadow: 2px 2px 4px #dcdcdc;
+  color: white;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+}
+.message-left p > span,
+.message-right p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.feedback {
+  font-size: 14px;
+  font-style: italic;
+  padding: 0px 16px 16px 16px;
+  color: #2d2d2d;
+  text-align: center;
+}
+.emojiBtn {
+  background-color: white;
+}
+
+.message-form {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.message-input {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #fff;
+}
+.send-button {
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  padding: 0px 20px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.v-divider {
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+.client-total {
+  margin: 20px 0;
+  color: #7e7e7e;
+}
+.emojiBtn {
+  padding-right: 6px;
+  cursor: pointer;
+}
+.emojiBtn:hover {
+  transition: 0.15s;
+  scale: 1.2;
+}

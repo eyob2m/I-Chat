@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Madimi+One&family=Ojuju:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+
+<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>I chat 💭</h1>
+    <emoji-picker></emoji-picker>
+    <div class="main">
+      <div class="name">
+        <span>➿</span>
+
+        <input
+          title="name"
+          type="text"
+          name="name"
+          maxlength="20"
+          class="name-input"
+          value="annonymous"
+          id=""
+        />
+      </div>
+      <ul class="message-container" id="message-container"></ul>
+
+      <form action="" class="message-form" id="message-form">
+        <input
+          title="message"
+          type="text"
+          name="message"
+          class="message-input"
+          id="message-input"
+        />
+        <div class="emojiBtn">😊</div>
+        <div class="v-divider"></div>
+        <button type="submit" title="submit" class="send-button">
+          Send <span>🏹</span>
+        </button>
+      </form>
+    </div>
+    <h3 class="clients-total" id="client-total">Total Client: 3</h3>
+    <script src="Emoji.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-picker-element/dist/index.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+      integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
