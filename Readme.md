@@ -1,9 +1,13 @@
 # Simple real-time chat app Using Socket.io
+## What is Socket.io
 
-## Used
+Socket.IO is an event-driven library for real-time web applications. It enables real-time, bi-directional communication between web clients and servers.
 
-I used simple code to build this simple chat website. 
-This website use Socket.io to transmite data at a real-time.
+## About 
 
+I used simple code to build this simple chat webapp. 
+This webapp use Socket.io to transmit real-time data.
+------------------
+## Preview
 ![ScreenShots](/public/ichat.png)
 
